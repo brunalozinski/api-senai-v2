@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "8193852a-1946-4f09-ac43-ee005443c076",
+		"name": "api-senai-v2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1/prof-cristiano/api-senai-v2/pessoa/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"prof-cristiano",
+						"api-senai-v2",
+						"pessoa",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cod_pessoa\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1/prof-cristiano/api-senai-v2/pessoa/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"prof-cristiano",
+						"api-senai-v2",
+						"pessoa",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"João \",\r\n    \"sobrenome\": \"da Silva\",\r\n    \"email\": \"joao.silva@gmail.com\",\r\n    \"celular\": \"9-0000-1111\",\r\n    \"fotografia\": \"imagem do João\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1/prof-cristiano/api-senai-v2/pessoa/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"prof-cristiano",
+						"api-senai-v2",
+						"pessoa",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
